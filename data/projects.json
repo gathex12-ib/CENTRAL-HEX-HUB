@@ -1,0 +1,308 @@
+[
+  {
+    "id": "hexai",
+    "name": "HEX-AI",
+    "category": "Applications",
+    "icon": "🧠",
+    "description": "Assistant IA CENTRAL-HEX pour discuter, apprendre, coder, traduire et développer ses idées.",
+    "status": "En développement",
+    "image": "assets/visuals/hex-ai.svg",
+    "gallery": [
+      "assets/visuals/hex-ai.svg"
+    ],
+    "link": "",
+    "download": "",
+    "featured": true,
+    "details": "HEX-AI regroupe les expériences d’assistance par intelligence artificielle associées à CENTRAL-HEX. Les deux accès ci-dessous correspondent aux versions actuellement communiquées.",
+    "features": [
+      "Chat IA",
+      "Aide au développement",
+      "Traduction et rédaction",
+      "Assistant de projets"
+    ],
+    "commands": [],
+    "links": [
+      {
+        "label": "HEX-AI — Version Lovable",
+        "url": "https://hex-ai-cem.lovable.app"
+      },
+      {
+        "label": "CENTRAL-HEX IA — Version Base44",
+        "url": "https://central-hex-ia-copy-cff1d280.base44.app/?is_new_user=true"
+      }
+    ]
+  },
+  {
+    "id": "hexrec",
+    "name": "HEX-REC",
+    "category": "Applications",
+    "icon": "🎥",
+    "description": "Projet d’enregistreur d’écran Android pour capturer des vidéos, du son et du gameplay.",
+    "status": "En développement",
+    "image": "assets/apps/hex-rec.jpg",
+    "gallery": [
+      "assets/apps/hex-rec.jpg"
+    ],
+    "link": "",
+    "download": "",
+    "featured": true,
+    "details": "HEX-REC est le projet d’application de capture d’écran et d’enregistrement vidéo. Cette fiche accueillera les fonctions réellement présentes dans l’APK, les informations de compatibilité et le téléchargement dès que le fichier sera fourni.",
+    "features": [
+      "Capture d’écran",
+      "Enregistrement vidéo",
+      "Détails audio et options à confirmer avec l’APK"
+    ],
+    "commands": []
+  },
+  {
+    "id": "centralbot",
+    "name": "CENTRAL-HEX BOT",
+    "category": "Bots",
+    "icon": "🤖",
+    "description": "Bot WhatsApp communautaire : commandes, outils et automatisations.",
+    "status": "En développement",
+    "image": "assets/visuals/central-hex-bot.svg",
+    "gallery": [
+      "assets/visuals/central-hex-bot.svg"
+    ],
+    "link": "",
+    "download": "",
+    "featured": true,
+    "details": "CENTRAL-HEX BOT est le bot WhatsApp de la communauté. Cette fiche rassemble ses points d’accès actuellement fournis par l’équipe. Choisis un serveur pour ouvrir son panneau ou son interface de connexion. La disponibilité de chaque hébergement peut varier.",
+    "features": [
+      "Commandes WhatsApp",
+      "Outils communautaires",
+      "Automatisations",
+      "Réponses utiles"
+    ],
+    "commands": [
+      {
+        "name": ".menu",
+        "description": "Afficher le menu des commandes, si cette commande est activée sur la version choisie."
+      },
+      {
+        "name": ".ping",
+        "description": "Tester la réponse du bot, si cette commande est activée."
+      },
+      {
+        "name": ".help",
+        "description": "Demander de l’aide ou la liste des commandes, si disponible."
+      }
+    ],
+    "prerequisites": [
+      "Un compte WhatsApp actif sur ton téléphone.",
+      "Une connexion Internet stable.",
+      "Ouvrir un seul serveur à la fois et suivre les instructions affichées.",
+      "Ne jamais partager un code de vérification WhatsApp avec quelqu’un."
+    ],
+    "examples": [
+      "Exemple indicatif : envoyer .menu dans la conversation avec le bot.",
+      "Exemple indicatif : envoyer .ping pour tester sa réponse.",
+      "Les commandes exactes peuvent varier selon la version et le serveur. Vérifie le menu renvoyé par le bot."
+    ],
+    "links": [
+      {
+        "label": "CENTRAL-HEX BOT — Serveur 1 (Railway)",
+        "url": "https://central-hex-production-ib.up.railway.app/"
+      },
+      {
+        "label": "CENTRAL-HEX BOT — Serveur 2 (Render)",
+        "url": "https://central-hex-2cxh.onrender.com/"
+      },
+      {
+        "label": "CENTRAL-HEX BOT — Serveur 3 (Render)",
+        "url": "https://central-hex-1-17ji.onrender.com/"
+      },
+      {
+        "label": "CENTRAL-HEX BOT — Serveur 4 (SkyHost)",
+        "url": "https://central-hex-bot.skyhost.tech/"
+      }
+    ]
+  },
+  {
+    "id": "jarvis",
+    "name": "JARVIS",
+    "category": "Applications",
+    "icon": "🦾",
+    "description": "Assistant personnel expérimental pour l’écosystème HEX.",
+    "status": "Bientôt",
+    "image": "assets/apps/jarvis.jpg",
+    "gallery": [
+      "assets/apps/jarvis.jpg"
+    ],
+    "link": "",
+    "download": "",
+    "featured": true,
+    "details": "JARVIS est présenté comme un assistant personnel de l’écosystème CENTRAL-HEX. Cette fiche accueillera sa présentation, ses fonctions confirmées, les captures et le fichier APK. Le téléchargement sera ajouté depuis l’administration lorsque l’APK sera fourni.",
+    "features": [
+      "Présentation de l’assistant",
+      "Fonctions et cas d’usage à documenter à partir de l’APK",
+      "Téléchargement Android à ajouter après réception"
+    ],
+    "commands": []
+  },
+  {
+    "id": "hextools",
+    "name": "HEX TOOLS",
+    "category": "Tools",
+    "icon": "🧰",
+    "description": "Collection d’utilitaires et d’outils web réunis au même endroit.",
+    "status": "En développement",
+    "image": "assets/visuals/hex-tools.svg",
+    "gallery": [
+      "assets/visuals/hex-tools.svg"
+    ],
+    "link": "",
+    "download": "",
+    "featured": true,
+    "details": "HEX TOOLS est le regroupement des utilitaires et mini-applications de l’écosystème CENTRAL-HEX. Ouvre un outil depuis la liste ci-dessous. Les services restent hébergés sur leurs plateformes respectives.",
+    "features": [
+      "Outils web",
+      "Utilitaires",
+      "Accès centralisé"
+    ],
+    "commands": [],
+    "links": [
+      {
+        "label": "HEX TOOLS — Portail principal",
+        "url": "https://central-hex-tools.netlify.app/"
+      },
+      {
+        "label": "HEX PROMP",
+        "url": "https://hex-promp.netlify.app/"
+      },
+      {
+        "label": "HEX RADAR",
+        "url": "https://hex-radar.netlify.app/"
+      },
+      {
+        "label": "HEX PROMP TEXTE",
+        "url": "https://hex-promp-texte.netlify.app/"
+      },
+      {
+        "label": "HEX IDEA CREATOR",
+        "url": "https://hex-idea-creator.netlify.app/"
+      },
+      {
+        "label": "CENTRAL-HEX SIGNAL",
+        "url": "https://central-hex-signal.netlify.app/"
+      },
+      {
+        "label": "HEX TOOLS LAB",
+        "url": "https://hex-tools-lab.netlify.app/"
+      },
+      {
+        "label": "HEX AI STUDIOS",
+        "url": "https://hex-ai-studios.lovable.app/"
+      },
+      {
+        "label": "CENTRAL-HEX RÉSEAUX",
+        "url": "https://central-hex-reseau-s.netlify.app/"
+      }
+    ]
+  },
+  {
+    "id": "hexsonic",
+    "name": "HEXSONIC",
+    "category": "Applications",
+    "icon": "🎵",
+    "description": "Projet mobile expérimental autour de la reconnaissance musicale.",
+    "status": "En développement",
+    "image": "assets/apps/hexsonic.jpg",
+    "gallery": [
+      "assets/apps/hexsonic.jpg"
+    ],
+    "link": "",
+    "download": "",
+    "featured": false,
+    "details": "HEXSONIC est un concept d’application de reconnaissance musicale. La fiche sera mise à jour avec les avancées et le téléchargement lorsqu’ils seront prêts.",
+    "features": [
+      "Reconnaissance musicale — objectif",
+      "Historique",
+      "Projet mobile"
+    ],
+    "commands": []
+  },
+  {
+    "id": "telechex",
+    "name": "TELECHEX",
+    "category": "Applications",
+    "icon": "📥",
+    "description": "Projet de gestion de liens vidéo issus de plateformes sociales.",
+    "status": "En développement",
+    "image": "assets/visuals/telechex.svg",
+    "gallery": [
+      "assets/visuals/telechex.svg"
+    ],
+    "link": "",
+    "download": "",
+    "featured": false,
+    "details": "TELECHEX explorera les liens vidéo des plateformes prises en charge, avec une interface simple et mobile. Les possibilités dépendront des règles et capacités de chaque plateforme.",
+    "features": [
+      "Interface mobile",
+      "Gestion de liens",
+      "Plateformes prises en charge à préciser"
+    ],
+    "commands": []
+  },
+  {
+    "id": "hexapp",
+    "name": "HEX-APP",
+    "category": "Applications",
+    "icon": "✨",
+    "description": "Application communautaire pour suivre l’univers et les annonces CENTRAL-HEX.",
+    "status": "En développement",
+    "image": "assets/apps/hex-app.jpg",
+    "gallery": [
+      "assets/apps/hex-app.jpg"
+    ],
+    "link": "",
+    "download": "",
+    "featured": false,
+    "details": "HEX-APP sera un espace de rassemblement pour les annonces, contenus et projets de la communauté CENTRAL-HEX.",
+    "features": [
+      "Actualités",
+      "Communauté",
+      "Projets et annonces"
+    ],
+    "commands": []
+  },
+  {
+    "id": "itachi-md-v2",
+    "name": "ITACHI-MD V2",
+    "category": "Bots",
+    "icon": "🥷",
+    "description": "Bot WhatsApp ITACHI-MD V2 — deux points d’accès communiqués.",
+    "status": "Disponible",
+    "image": "assets/visuals/central-hex-bot.svg",
+    "gallery": [
+      "assets/visuals/central-hex-bot.svg"
+    ],
+    "link": "",
+    "download": "",
+    "featured": false,
+    "details": "ITACHI-MD V2 est présenté ici dans la catégorie Bots. Les deux accès ci-dessous sont ceux fournis par CENTRAL-HEX. La liste de commandes et les prérequis spécifiques seront ajoutés après vérification de cette version.",
+    "features": [
+      "Deux points d’accès fournis",
+      "Ouverture des interfaces d’hébergement",
+      "Commandes spécifiques à documenter"
+    ],
+    "prerequisites": [
+      "Compte WhatsApp actif.",
+      "Connexion Internet.",
+      "Suivre les instructions affichées par le service."
+    ],
+    "commands": [],
+    "examples": [],
+    "links": [
+      {
+        "label": "ITACHI-MD V2 — Serveur 1 (Railway)",
+        "url": "https://itachi-md-v2-production.up.railway.app/"
+      },
+      {
+        "label": "ITACHI-MD V2 — Serveur 2 (Render)",
+        "url": "https://itachi-md-v2.onrender.com/"
+      }
+    ]
+  }
+]
