@@ -1,0 +1,9 @@
+{
+  "name": "central-hex-hub",
+  "version": "6.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  }
+}
