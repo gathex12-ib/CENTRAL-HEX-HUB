@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#090d19">
+  <meta name="description" content="CENTRAL-HEX HUB : découvre nos projets tech, IA, bots, applications et outils digitaux.">
+  <meta name="color-scheme" content="light dark">
+  <title>CENTRAL-HEX HUB — Tech • IA • Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/central-hex-icon.png">
+  <link rel="apple-touch-icon" href="assets/central-hex-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="CENTRAL-HEX HUB, accueil">
+      <img src="assets/central-hex-icon.png" alt="" class="brand-icon">
+      <span>CENTRAL-HEX <small>HUB</small></span>
+    </a>
+    <nav id="nav" class="main-nav" aria-label="Navigation principale">
+      <a href="#home">Accueil</a><a href="#projects">Projets</a><a href="#categories">Univers</a><a href="/proposer/">Proposer un projet</a>
+    </nav>
+    <div class="header-actions">
+      <button id="favoritesQuick" class="icon-btn" type="button" aria-label="Afficher les favoris" title="Mes favoris">♡ <span id="favoriteCount">0</span></button>
+      <button id="theme" class="icon-btn" type="button" aria-label="Changer le thème" title="Changer le thème">☼</button>
+      <a class="btn btn-blue header-join" href="https://whatsapp.com/channel/0029VbDCmVWISTkNEy1D3p3H" target="_blank" rel="noopener">Rejoindre ↗</a>
+      <button id="menu" class="icon-btn menu-btn" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow"><i></i> L'ÉCOSYSTÈME CENTRAL-HEX</span>
+        <h1>La tech prend<br><span>une nouvelle dimension.</span></h1>
+        <p>Explore nos bots, applications, outils et expériences digitales. Un espace pour découvrir ce qu'on imagine, ce qu'on construit et ce qu'on partage.</p>
+        <div class="hero-actions"><a class="btn btn-blue" href="#projects">Explorer les projets <span>↗</span></a><a class="btn btn-ghost" href="/proposer/">Proposer un projet</a></div>
+        <div class="hero-metrics"><div><b id="total">08</b><span>Projets présentés</span></div><div><b>05</b><span>Univers tech</span></div><div><b>∞</b><span>Idées à créer</span></div></div>
+      </div>
+      <div class="hero-visual" id="heroCarousel" aria-label="Projets à la une">
+        <div id="heroSlides" class="hero-slides"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-caption"><span class="live-dot"></span><div><b id="slideTitle">CENTRAL-HEX HUB</b><small id="slideCaption">Où la technologie rencontre la créativité.</small></div></div>
+        <div class="carousel-controls"><button id="prevSlide" type="button" aria-label="Image précédente">‹</button><div id="slideDots" class="slide-dots"></div><button id="nextSlide" type="button" aria-label="Image suivante">›</button><button id="pauseSlide" type="button" aria-label="Mettre le carrousel en pause">Ⅱ</button></div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-label="Domaines CENTRAL-HEX"><div>✦ CENTRAL-HEX <span>•</span> INTELLIGENCE ARTIFICIELLE <span>•</span> BOTS & AUTOMATISATION <span>•</span> APPLICATIONS <span>•</span> OUTILS DIGITAUX <span>•</span> DÉVELOPPEMENT WEB <span>•</span> CENTRAL-HEX <span>•</span></div></div>
+
+    <section class="section wrap" id="categories">
+      <div class="section-heading"><div><span class="kicker">EXPLORE NOS UNIVERS</span><h2>Choisis ton <em>terrain de jeu.</em></h2></div><p>Des idées numériques, des outils pratiques et des projets qui évoluent.</p></div>
+      <div id="cats" class="category-grid"></div>
+    </section>
+
+    <section class="section wrap" id="projects">
+      <div class="section-heading"><div><span class="kicker">LE LABORATOIRE CENTRAL-HEX</span><h2>Nos <em>projets.</em></h2></div><p>Explore les fiches, enregistre tes favoris et compare les projets qui t'intéressent.</p></div>
+      <div class="project-toolbar">
+        <label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="Rechercher un projet, une fonction…" autocomplete="off"><kbd>/</kbd></label>
+        <select id="statusFilter" aria-label="Filtrer par statut"><option value="Tous">Tous les statuts</option><option>En développement</option><option>Disponible</option><option>Bientôt</option></select>
+        <select id="sort" aria-label="Trier les projets"><option value="featured">À la une</option><option value="az">Nom : A → Z</option><option value="za">Nom : Z → A</option><option value="status">Par statut</option></select>
+        <button id="favoritesOnly" class="filter-toggle" type="button" aria-pressed="false">♡ Favoris seulement</button>
+      </div>
+      <div class="filter-row"><div id="filters" class="filter-chips"></div><div class="results-meta"><span id="count">8 projets</span><button id="reset" type="button">Réinitialiser ↺</button></div></div>
+      <div id="cards" class="project-grid"></div>
+      <p id="empty" class="empty-state hidden">Aucun projet ne correspond à ta recherche. Essaie un autre mot ou réinitialise les filtres.</p>
+      <div id="compareDock" class="compare-dock hidden"><span><b id="compareCount">0</b> projet(s) sélectionné(s)</span><div><button id="clearCompare" class="btn btn-ghost btn-small" type="button">Effacer</button><button id="compareNow" class="btn btn-blue btn-small" type="button">Comparer</button></div></div>
+    </section>
+
+    <section class="section feature-section">
+      <div class="wrap"><div class="section-heading"><div><span class="kicker">UN HUB, PLUSIEURS POSSIBILITÉS</span><h2>Tout commence <em>par une idée.</em></h2></div><p>Un espace conçu pour apprendre, expérimenter et faire avancer les projets.</p></div>
+        <div class="feature-grid">
+          <article class="feature-card"><span>01</span><div class="feature-icon">🤖</div><h3>Intelligence artificielle</h3><p>Découvre les assistants, les usages de l'IA et les expérimentations de la communauté.</p></article>
+          <article class="feature-card"><span>02</span><div class="feature-icon">⚙️</div><h3>Bots & automatisation</h3><p>Des idées de bots, d'outils pratiques et de workflows pour gagner du temps.</p></article>
+          <article class="feature-card"><span>03</span><div class="feature-icon">📱</div><h3>Applications & outils</h3><p>Des projets mobiles et web pensés pour être utiles, accessibles et évolutifs.</p></article>
+          <article class="feature-card"><span>04</span><div class="feature-icon">🌍</div><h3>Communauté créative</h3><p>Partage tes idées, découvre les nouveautés et participe à l'aventure CENTRAL-HEX.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="proposal-cta wrap" id="submit"><div class="proposal-cta-icon">✦</div><div><span class="kicker">TON IDÉE A SA PLACE ICI</span><h2>Tu as un projet en tête ?</h2><p>Présente ton idée à l'équipe CENTRAL-HEX depuis notre espace dédié.</p></div><a class="btn btn-blue" href="/proposer/">Proposer un projet ↗</a></section>
+
+    <section class="faq-section wrap" id="faq"><div class="section-heading"><div><span class="kicker">QUESTIONS FRÉQUENTES</span><h2>Tu veux en <em>savoir plus ?</em></h2></div></div><div class="faq-list">
+      <details><summary>Les projets sont-ils tous déjà disponibles ? <span>＋</span></summary><p>Non. Chaque fiche indique son statut. Certains projets sont encore en développement ou en préparation. Les liens et téléchargements ne seront affichés que lorsqu'ils seront réellement disponibles.</p></details>
+      <details><summary>Comment proposer une idée ? <span>＋</span></summary><p>Utilise le bouton « Proposer un projet » pour ouvrir notre page dédiée et transmettre ta proposition.</p></details>
+      <details><summary>Mes favoris sont-ils synchronisés ? <span>＋</span></summary><p>Pour le moment, les favoris et préférences sont enregistrés localement dans ton navigateur. Ils ne sont pas synchronisés entre plusieurs appareils.</p></details>
+      <details><summary>Comment devenir membre de la communauté ? <span>＋</span></summary><p>Rejoins notre chaîne WhatsApp pour suivre les annonces, les nouveautés et les prochaines initiatives CENTRAL-HEX.</p></details>
+    </div></section>
+
+    <section class="community-section"><div class="wrap community-inner"><div><span class="kicker">REJOINS L'AVENTURE</span><h2>On apprend. On applique.<br><em>On évolue ensemble.</em></h2><p>La technologie rencontre la créativité. Fais partie de la communauté.</p><a class="btn btn-white" href="https://whatsapp.com/channel/0029VbDCmVWISTkNEy1D3p3H" target="_blank" rel="noopener">Rejoindre la chaîne WhatsApp ↗</a></div><img src="assets/central-hex-icon.png" alt="Emblème CENTRAL-HEX HUB" loading="lazy"></div></section>
+
+    <section class="about-section wrap"><img src="assets/central-hex-icon.png" alt="CENTRAL-HEX" loading="lazy"><div><span class="kicker">À PROPOS</span><h2>Où la technologie rencontre <em>la créativité.</em></h2><p>CENTRAL-HEX est un espace dédié à la tech, à l'intelligence artificielle, au développement web, aux bots et à la création digitale. Ici, on ne reste pas spectateur : on apprend, on applique et on évolue.</p><a href="mailto:centralhex224@gmail.com">Nous contacter : centralhex224@gmail.com ↗</a></div></section>
+  </main>
+
+  <footer class="site-footer"><a class="footer-brand" href="#home"><img src="assets/central-hex-icon.png" alt=""><b>CENTRAL-HEX HUB</b></a><p>© <span id="year"></span> CENTRAL-HEX — L'innovation commence par une idée. 🚀</p></footer>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-panel"><button id="close" class="modal-close" type="button" aria-label="Fermer">×</button><div id="detail"></div></div></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <button id="backTop" class="back-top" type="button" aria-label="Retour en haut">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
